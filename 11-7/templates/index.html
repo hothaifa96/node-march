@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Page</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6600;
+    }
+
+    .funny-image {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Funny Page!</h1>
+  <img class="funny-image" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D222247089235175%26get_thumbnail%3D1&tbnid=akMsGPWa491RHM&vet=12ahUKEwjvtNnMn4aAAxUqmycCHWmjDMwQMygEegUIARDKAQ..i&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fprogrammer.me.in%2Fvideos%2Ffunny-git-merge-like-%25EF%25B8%258F-comment-and-sharefollow-programmerme-for-daily-updatesrep%2F222247089235175%2F&docid=jiS0SrZwjVUASM&w=640&h=458&q=funny%20image%20git&ved=2ahUKEwjvtNnMn4aAAxUqmycCHWmjDMwQMygEegUIARDKAQ" alt="Funny Cat">
+  <p>Why did the tomato turn red? Because it saw the salad dressing!</p>
+  <button onclick="tellJoke()">Tell me another joke!</button>
+
+  <script>
+    function tellJoke() {
+      var jokes = [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "Why couldn't the bicycle find its way home? It lost its bearings!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "Why don't eggs tell jokes? Because they might crack up!"
+      ];
+
+      var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+      alert(randomJoke);
+    }
+  </script>
+</body>
+</html>
